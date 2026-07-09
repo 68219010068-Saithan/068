@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>สอบคร้ังที่ 1 – สาญธาณ อ่อนโสม</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #FFFFFF;       
+         }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+
+    body{
+          color: var(--ink);
+      font-family: 'Cinzel Decorative', serif;
+      letter-spacing: 0.4px;
+    }
+
+    .wrap{
+      min-height: 100%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding: 40px 16px;
+    }
+
+    .card{
+      width: 100%;
+      max-width: 520px;
+      background: var(--paper);
+      border: 1px solid var(--edge);
+      border-radius: 12px;
+      padding: 28px 28px 32px;
+      position: relative;
+      box-shadow:
+        0 4px 0 rgba(0,0,0,.4),
+        0 15px 25px rgba(0,0,0,.8),
+        inset 0 0 0 1px rgba(255,255,255,.08);
+    }
+    .card:before{
+      content: "";
+      position:absolute; inset:0;
+      background: repeating-linear-gradient(
+        -8deg,
+        transparent 0 12px,
+        rgba(122,62,45,.07) 12px 13px
+      );
+      border-radius: 12px;
+      pointer-events:none;
+    }
+
+    .title{
+      font-family: 'UnifrakturCook', cursive;
+      font-size: 28px;
+      text-align:center;
+      margin: 0 0 18px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .avatar-box{
+      display:flex;
+      justify-content:center;
+      margin: 6px 0 16px;
+    }
+    .avatar{
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 50%; /* วงกลมโกธิค */
+      border: 3px solid var(--accent);
+      box-shadow: 0 0 25px rgba(122,62,45,.7);
+      filter: grayscale(30%) contrast(120%) sepia(20%);
+      background: #1c1613;
+    }
+
+    .name{
+      text-align:center;
+      font-size: 26px;
+      margin: 14px 0 6px;
+      font-weight: 700;
+      color: var(--ink);
+      font-family: 'Cinzel Decorative', serif;
+    }
+
+    .student-id{
+      text-align:center;
+      font-size: 26px;
+      margin: 14px 0 6px;
+      font-weight: 700;
+      color: var(--ink);
+      font-family: 'Cinzel Decorative', serif;
+
+    }
+
+    .ornament{
+      width: 100%;
+      display:flex; gap: 12px; align-items:center; justify-content:center;
+      margin: 8px 0 12px;
+      opacity: .8;
+    }
+    .ornament:before, .ornament:after{
+      content:""; flex:1; height:1px; background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    }
+    .dot{ width:8px; height:8px; border-radius:50%; background: var(--accent); box-shadow:0 0 6px var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <main class="card" role="main" aria-label="โปรไฟล์นักเรียนสไตล์วินเทจโกธิค">
+      <h1 class="title">Student Profile</h1>
+
+      <div class="avatar-box">
+        <img class="avatar" src="68219010068.jpg" alt="รูปนักเรียน" width="500" height="300" />
+      </div>
+
+      <div class="ornament" aria-hidden="true"><span class="dot"></span></div>
+
+      <div class="name" id="student-name">ชื่อ น.ส.สาญธาณ - นามสกุล อ่อนโสม </div>
+	<div class="name" id="student-name">อายุ 16 ปี </div>
+	<div class="name" id="student-name">ที่อยู่ : 54/7 หัวยใหญ่ บางละมุง จ.ชลบุรี </div>
+	<div class="name" id="student-name">ผลการเรียนเฉลี่ย: 3.97 </div>
+      <p class="student-id" id="student-id">รหัสนักศึกษา:68219010068 </p>
+	 <div class="avatar-box">
+ 	<p class="student-id" id="student-id">	หมาฮัสกี้ตัวใหญ่ </p>
+        <img class="avatar" src="Husky.jpg" alt="รูปนักเรียน" width="500" height="300" />
+	
+
+      </div>
+
+	
+    </main>
+  </div>
+</body>
+</html>
